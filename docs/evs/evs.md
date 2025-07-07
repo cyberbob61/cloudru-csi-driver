@@ -104,18 +104,18 @@ See [IAM Policies for EVS CSI](../iam-policies.md#iam-policies-for-evs-csi) for 
 Use the following command create `cloud-config` secret:
 
 ```shell
-kubectl create secret -n kube-system generic cloud-config --from-file=/etc/evs/cloud-config
+kubectl create secret -n kube-system generic cloud-config --from-file=cloud-config
 ```
 
 - Create RBAC resources
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/deploy/evs-csi-plugin/kubernetes/rbac-csi-evs-controller.yaml
-kubectl apply -f https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/deploy/evs-csi-plugin/kubernetes/rbac-csi-evs-node.yaml
-kubectl apply -f https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/deploy/evs-csi-plugin/kubernetes/rbac-csi-evs-secret.yaml
+kubectl apply -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver/master/deploy/evs-csi-plugin/kubernetes/rbac-csi-evs-controller.yaml
+kubectl apply -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver/master/deploy/evs-csi-plugin/kubernetes/rbac-csi-evs-node.yaml
+kubectl apply -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver/master/deploy/evs-csi-plugin/kubernetes/rbac-csi-evs-secret.yaml
 ```
 
-- Install HuaweiCloud EVS CSI Driver
+- Install CloudRu EVS CSI Driver
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/deploy/evs-csi-plugin/kubernetes/csi-evs-driver.yaml
