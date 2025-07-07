@@ -26,7 +26,7 @@ spec:
             - name: ADDRESS
               value: /csi/csi.sock
             - name: DRIVER_REG_SOCK_PATH
-              value: /var/lib/kubelet/plugins/evs.csi.huaweicloud.com/csi.sock
+              value: /var/lib/kubelet/plugins/evs.csi.cloud.ru/csi.sock
             - name: KUBE_NODE_NAME
               valueFrom:
                 fieldRef:
@@ -85,7 +85,7 @@ spec:
               mountPath: /var/lib/kubelet
               mountPropagation: Bidirectional
             - name: pass-pods-mount-dir
-              mountPath: /mnt/paas/kubernetes/kubelet
+              mountPath: /var/lib/csi
               mountPropagation: Bidirectional
             - name: pods-probe-dir
               mountPath: /dev
@@ -101,7 +101,7 @@ spec:
       volumes:
         - name: socket-dir
           hostPath:
-            path: /var/lib/kubelet/plugins/evs.csi.huaweicloud.com
+            path: /var/lib/kubelet/plugins/evs.csi.cloud.ru
             type: DirectoryOrCreate
         - name: registration-dir
           hostPath:
@@ -113,7 +113,7 @@ spec:
             type: Directory
         - name: pass-pods-mount-dir
           hostPath:
-            path: /mnt/paas/kubernetes/kubelet
+            path: /var/lib/csi
             type: DirectoryOrCreate
         - name: pods-probe-dir
           hostPath:
