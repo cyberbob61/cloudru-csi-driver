@@ -2,7 +2,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: evs-sc
-provisioner: evs.csi.huaweicloud.com
+provisioner: evs.csi.cloud.ru
 allowVolumeExpansion: true
 parameters:
   type: SSD
