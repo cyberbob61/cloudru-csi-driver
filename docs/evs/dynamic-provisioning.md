@@ -9,19 +9,19 @@
 ### Step 1: Create SC
 
 ```
-kubectl create -f  https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/examples/evs-csi-plugin/kubernetes/normal/sc.yaml
+kubectl create -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver/master/examples/evs-csi-plugin/kubernetes/normal/sc.yaml
 ```
 
 ### Step 2: Create PVC
 
 ```
-kubectl create -f  https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/examples/evs-csi-plugin/kubernetes/normal/pvc.yaml
+kubectl create -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver/master/examples/evs-csi-plugin/kubernetes/normal/pvc.yaml
 ```
 
 ### Step 3: Create POD
 
 ```
-kubectl create -f  https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/examples/evs-csi-plugin/kubernetes/normal/pod.yaml
+kubectl create -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver/master/examples/evs-csi-plugin/kubernetes/normal/pod.yaml
 ```
 
 ### Step 4: Check status of POD/PVC/PV
