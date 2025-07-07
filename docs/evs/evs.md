@@ -118,7 +118,7 @@ kubectl apply -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver
 - Install CloudRu EVS CSI Driver
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/deploy/evs-csi-plugin/kubernetes/csi-evs-driver.yaml
+kubectl apply -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver/master/deploy/evs-csi-plugin/kubernetes/csi-evs-driver.yaml
 kubectl apply -f https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/deploy/evs-csi-plugin/kubernetes/csi-evs-controller.yaml
 kubectl apply -f https://raw.githubusercontent.com/huaweicloud/huaweicloud-csi-driver/master/deploy/evs-csi-plugin/kubernetes/csi-evs-node.yaml
 ```
