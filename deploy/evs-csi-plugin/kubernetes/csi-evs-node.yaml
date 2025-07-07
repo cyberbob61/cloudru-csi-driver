@@ -26,7 +26,7 @@ spec:
             - name: ADDRESS
               value: /csi/csi.sock
             - name: DRIVER_REG_SOCK_PATH
-              value: /var/lib/kubelet/plugins/evs.csi.huaweicloud.com/csi.sock
+              value: /var/lib/kubelet/plugins/evs.csi.cloud.ru/csi.sock
             - name: KUBE_NODE_NAME
               valueFrom:
                 fieldRef:
@@ -101,7 +101,7 @@ spec:
       volumes:
         - name: socket-dir
           hostPath:
-            path: /var/lib/kubelet/plugins/evs.csi.huaweicloud.com
+            path: /var/lib/kubelet/plugins/evs.csi.cloud.ru
             type: DirectoryOrCreate
         - name: registration-dir
           hostPath:
