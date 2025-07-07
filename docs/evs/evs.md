@@ -126,9 +126,8 @@ kubectl apply -f https://raw.githubusercontent.com/cyberbob61/cloudru-csi-driver
 - Waiting for all the pods in running
 
 ```
-# kubectl get all -A
+# kubectl get all -A | grep csi-evs
 NAME                                   READY   STATUS    RESTARTS       AGE
-...
 csi-evs-plugin-bkkpb                   3/3     Running   0              3m22s
 csi-evs-provisioner-54c44b746f-22p46   6/6     Running   0              88s
 ```
