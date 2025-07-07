@@ -1,10 +1,7 @@
 [Global]
-region=
-access-key=
-secret-key=
-
-# Optional
-project-id=
-# Only needed if you are not on Huawei Cloud
-cloud=
-auth-url=
+region=ru-moscow-1
+access-key=...
+secret-key=...
+project-id=...
+cloud=hc.sbercloud.ru
+auth-url=https://iam.ru-moscow-1.hc.sbercloud.ru:443/v3/
